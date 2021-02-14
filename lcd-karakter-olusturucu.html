@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LCD Özel Karakter Üreteci</title>
+  <link rel="icon"
+    href="https://www.flaticon.com/svg/vstatic/svg/908/908590.svg?token=exp=1613140605~hmac=127a69ec63e82f63dad9df227b41024c"
+    type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arduino için LCD'yi destekleyen karakter oluşturur.">
+  <meta name="keywords"
+    content="lcd, lcd custom character, lcd character generator, lcd özel karakter, lcd karakter üreteci">
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<!--   <a href="#" class="action-button shadow animate green">LCD Özel Karakter Üreteci</a>
+ -->
+
+<body>
+  <article class="content">
+    <div style="display: flex; justify-content: space-between;">
+      <h1 class="deaction-button animate blueorta"><a href="http://projedefteri.tk"
+          class="action-button shadow animate green fa fa-arrow-circle-left" target="_blank"
+          rel="nofollow ugc">&nbsp;&nbsp;Proje
+          Defteri Ana
+          Sayfasına Dön</a><a class="ortaction-button yellow">&nbsp;&nbsp;LCD Özel Karakter Üreteci</a><a
+          href="http://projedefteri.tk/docs" target="_blank"
+          class="baction-button shadow animate green fa fa-arrow-circle-left" rel="nofollow ugc">&nbsp;&nbsp;Proje
+          DefteriDOC'a Geri Dön</a></h1>
+    </div>
+    <br />
+    <h2>Arduino için LCD'yi destekleyen karakter oluşturur</h2>
+    <div class="main-box">
+      <div class="box-char-pic">
+        <div class="btn-group">
+          <button style="padding: 6px 10px;" type="button" id="up">Yukarı</button>
+          &nbsp;&nbsp;
+          <button style="padding: 6px 10px;" type="button" id="down">Aşağı</button>
+          &nbsp;&nbsp;
+          <button style="padding: 6px 10px;" type="button" id="left">Sol</button>
+          &nbsp;&nbsp;
+          <button style="padding: 6px 10px;" type="button" id="right">Sağ</button>
+        </div>
+        <div class="box-char blue">
+          <!-- <div id="loop"></div> -->
+          <div class="col">
+            <div class="dot-px" data-x="0" data-y="0"></div>
+            <div class="dot-px" data-x="0" data-y="1"></div>
+            <div class="dot-px" data-x="0" data-y="2"></div>
+            <div class="dot-px" data-x="0" data-y="3"></div>
+            <div class="dot-px" data-x="0" data-y="4"></div>
+          </div>
+          <div class="col">
+            <div class="dot-px" data-x="1" data-y="0"></div>
+            <div class="dot-px" data-x="1" data-y="1"></div>
+            <div class="dot-px" data-x="1" data-y="2"></div>
+            <div class="dot-px" data-x="1" data-y="3"></div>
+            <div class="dot-px" data-x="1" data-y="4"></div>
+          </div>
+          <div class="col">
+            <div class="dot-px" data-x="2" data-y="0"></div>
+            <div class="dot-px" data-x="2" data-y="1"></div>
+            <div class="dot-px" data-x="2" data-y="2"></div>
+            <div class="dot-px" data-x="2" data-y="3"></div>
+            <div class="dot-px" data-x="2" data-y="4"></div>
+          </div>
+          <div class="col">
+            <div class="dot-px" data-x="3" data-y="0"></div>
+            <div class="dot-px" data-x="3" data-y="1"></div>
+            <div class="dot-px" data-x="3" data-y="2"></div>
+            <div class="dot-px" data-x="3" data-y="3"></div>
+            <div class="dot-px" data-x="3" data-y="4"></div>
+          </div>
+          <div class="col">
+            <div class="dot-px" data-x="4" data-y="0"></div>
+            <div class="dot-px" data-x="4" data-y="1"></div>
+            <div class="dot-px" data-x="4" data-y="2"></div>
+            <div class="dot-px" data-x="4" data-y="3"></div>
+            <div class="dot-px" data-x="4" data-y="4"></div>
+          </div>
+          <div class="col">
+            <div class="dot-px" data-x="5" data-y="0"></div>
+            <div class="dot-px" data-x="5" data-y="1"></div>
+            <div class="dot-px" data-x="5" data-y="2"></div>
+            <div class="dot-px" data-x="5" data-y="3"></div>
+            <div class="dot-px" data-x="5" data-y="4"></div>
+          </div>
+          <div class="col">
+            <div class="dot-px" data-x="6" data-y="0"></div>
+            <div class="dot-px" data-x="6" data-y="1"></div>
+            <div class="dot-px" data-x="6" data-y="2"></div>
+            <div class="dot-px" data-x="6" data-y="3"></div>
+            <div class="dot-px" data-x="6" data-y="4"></div>
+          </div>
+          <div class="col">
+            <div class="dot-px" data-x="7" data-y="0"></div>
+            <div class="dot-px" data-x="7" data-y="1"></div>
+            <div class="dot-px" data-x="7" data-y="2"></div>
+            <div class="dot-px" data-x="7" data-y="3"></div>
+            <div class="dot-px" data-x="7" data-y="4"></div>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="button" id="clear">Temizle</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" id="invert">Ters Çevir</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" id="preview">Ön İzleme</button>
+        </div>
+
+        <strong>Şemalar</strong>
+        <ul class="link-list">
+          <li><a href="img/ArduinoUnoR3LCD.png" target="_blank">16x2 LCD Şeması</a></li>
+          <li><a href="img/ArduinoUnoR3LCDI2C.png" target="_blank">16x2 LCD I2C Şeması</a></li>
+        </ul>
+        </ul>
+        <strong>Kütüphaneler</strong>
+        <ul class="link-list">
+          <li><a href="https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library" target="_blank">LCD
+              I2C Kütüphanesi</a></li>
+        </ul>
+        </ul>
+      </div>
+      <div class="config">
+        <form action="">
+          <div class="inline">
+            <strong>Renk:</strong>
+            <label><input type="radio" id="color" name="color" value="blue" checked> Mavi</label>
+            <label><input type="radio" id="color" name="color" value="green"> Yeşil</label>
+          </div>
+          <div class="inline">
+            <strong>Mikrodenetleyici:</strong>
+            <label><input type="radio" id="mcu" name="mcu" value="Arduino" checked disabled> Arduino</label>
+          </div>
+          <div class="inline">
+            <strong>Arayüz:</strong>
+            <label><input type="radio" id="interfacing" name="interfacing" value="parallel" checked> Paralel</label>
+            <label><input type="radio" id="interfacing" name="interfacing" value="i2c"> I2C</label>
+          </div>
+          <div class="inline">
+            <strong>Veri tipi:</strong>
+            <label><input type="radio" id="datatype" name="datatype" value="bin" checked> Binary</label>
+            <label><input type="radio" id="datatype" name="datatype" value="hex"> Hex</label>
+          </div>
+          <div class="inline">
+            <strong style="float: left;">Kod:</strong>
+            <div id="copybutton" style="float: left;">
+              <button type="button" onclick="copyFunction()" class="fa fa-copy">&nbsp;Kopyala</button>
+            </div>
+          </div>
+          <pre style="float: left;"><code class="language-cpp" id="code-box"></code></pre>
+      </div>
+      </form>
+    </div>
+    </div>
+  </article>
+  <footer class="deaction-button animate blueorta footer">
+    Sayfa kaynağı&nbsp;<a href="https://maxpromer.github.io/LCD-Character-Creator/"
+      target="_blank">LCD-Character-Creator</a>'den alınarak düzenlenmiştir.
+  </footer>
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/prism.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
