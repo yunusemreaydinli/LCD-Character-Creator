@@ -131,7 +131,6 @@ a {
 /* orta text UP*/
 .blue {
 	background-color: #3498DB;
-	border-bottom: 5px solid #2980B9;
 	text-shadow: 0px -2px #2980B9;
 }
 
@@ -230,7 +229,7 @@ h2 {
 }
 
 .box-char.blue {
-	background: #3498DB;
+	background: #3d62af;
 }
 
 .dot-px {
